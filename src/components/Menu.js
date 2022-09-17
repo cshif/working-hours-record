@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const items = [
   {
     key: 'dashboard',
@@ -22,8 +24,8 @@ export default function Menu() {
 
 function MenuItem({item}) {
   return (
-    <div className={`menu-item ${(item.isActive ? 'active' : '' )}`}>
+    <Link to={`/${item.key}`} className={`menu-item ${(item.isActive ? 'active' : '' )}`}>
       <p>{item.name}</p>
-    </div>
+    </Link>
   );
 }

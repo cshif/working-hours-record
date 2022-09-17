@@ -26,7 +26,7 @@ function ProjectsContainer() {
 
 function ProjectItem({item}) {
   return (
-    <Link to={`/projects/${item.name}`} onClick={test} className="project-item">
+    <Link to={`/project/${item.name}`} onClick={test} className="project-item">
       <div className="project-item-icon">
         <img src={folderOpen} alt="folder-open-icon"/>
       </div>
