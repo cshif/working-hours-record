@@ -19,6 +19,10 @@ const router = createBrowserRouter([
         element: <Dashboard />
       },
       {
+        path: '/dashboard',
+        element: <Dashboard />
+      },
+      {
         path: '/project/:projectId',
         element: <ProjectHome />,
         loader: ({params}) => params.projectId
