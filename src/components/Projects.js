@@ -12,7 +12,7 @@ export default function Projects() {
 }
 
 function ProjectsContainer() {
-  const projectItems = projects.map(item => <ProjectItem item={item} />);
+  const projectItems = projects.map(item => <ProjectItem item={item} key={item.id} />);
   return (
     <div className="projects-container">
       {projectItems}
