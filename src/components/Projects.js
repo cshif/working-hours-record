@@ -1,5 +1,6 @@
-import {projects} from "../../../assets/data/projects";
-import folderOpen from "../../../assets/icon/folder_open_FILL0_wght400_GRAD0_opsz48.svg";
+import {projects} from "../assets/data/projects";
+import folderOpen from "../assets/icon/folder_open_FILL0_wght400_GRAD0_opsz48.svg";
+import {Link} from "react-router-dom";
 
 export default function Projects() {
   return (
@@ -25,7 +26,7 @@ function ProjectsContainer() {
 
 function ProjectItem({item}) {
   return (
-    <div onClick={test} className="project-item">
+    <Link to={`/projects/${item.name}`} onClick={test} className="project-item">
       <div className="project-item-icon">
         <img src={folderOpen} alt="folder-open-icon"/>
       </div>
@@ -39,7 +40,7 @@ function ProjectItem({item}) {
           {netHours(item)} <span className="unit">hours</span>
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
 

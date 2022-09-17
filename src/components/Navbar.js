@@ -1,5 +1,5 @@
 // import styled from "styled-components";
-import logo from '../../../assets/img/logo.svg';
+import logo from '../assets/img/logo.svg';
 import Menu from './Menu';
 import User from './User';
 
