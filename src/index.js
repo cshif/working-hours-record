@@ -5,6 +5,7 @@ import './index.scss';
 
 import Home from "./pages/Home";
 import Dashboard from './pages/Dashboard';
+import ProjectHome from "./pages/project/ProjectHome";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Dashboard />
+      },
+      {
+        path: '/project/:projectId',
+        element: <ProjectHome />,
+        loader: ({params}) => params.projectId
       }
     ]
   }
