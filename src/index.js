@@ -3,14 +3,21 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.scss';
 
-import Dashboard from "./pages/dashboard/Dashboard";
+import Home from "./pages/Home";
+import Dashboard from './pages/Dashboard';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Dashboard />
+    element: <Home />,
+    children: [
+      {
+        path: '/',
+        element: <Dashboard />
+      }
+    ]
   }
 ]);
 
