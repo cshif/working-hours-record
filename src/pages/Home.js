@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <div className="dashboard">
       <Navbar />
-      <Outlet />
+      <div className="content-container">
+        <Outlet />
+      </div>
     </div>
   );
 }

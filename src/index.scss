@@ -132,11 +132,14 @@ $dark: #333;
   }
 }
 
-// Projects section
-.projects {
+// Content container
+.content-container {
   max-width: 960px;
   margin: 0 auto;
+}
 
+// Projects section
+.projects {
   .title {
     color: $dark;
   }
