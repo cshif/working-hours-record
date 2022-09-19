@@ -5,6 +5,7 @@ import './index.scss';
 
 import Home from "./pages/Home";
 import Dashboard from './pages/Dashboard';
+import Passbook from './pages/Passbook';
 import ProjectHome from "./pages/project/ProjectHome";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <Dashboard />
+      },
+      {
+        path: '/passbook',
+        element: <Passbook />
       },
       {
         path: '/project/:projectId',

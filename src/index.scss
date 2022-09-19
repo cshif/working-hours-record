@@ -138,12 +138,13 @@ $dark: #333;
   margin: 0 auto;
 }
 
+// Common
+h2.title {
+  color: $dark;
+}
+
 // Projects section
 .projects {
-  .title {
-    color: $dark;
-  }
-
   &-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
